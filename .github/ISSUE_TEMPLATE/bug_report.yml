@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a problem with the togo live-whatsapp plugin
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description + steps to reproduce (inbound vs outbound; include the webhook payload shape).
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: live-whatsapp / live / togo version
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Go version, WhatsApp API version.
